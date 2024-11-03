@@ -1,0 +1,209 @@
+/* Basic styling for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(26, 0, 58);
+    color: #fff;
+}
+
+.title h1{
+    color: #000;
+    text-align: center;
+    background-color: #0ef;
+    padding: 20px;
+}
+
+/* Main container for the layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Styling for the three main sections: categories, items, and bill */
+
+.categories {
+    flex: 0.3;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #0ef;
+    border-radius: 5px;
+}
+
+.bill {
+    flex: 0.6;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #0ef;
+    border-radius: 5px;
+}
+
+
+
+
+/* Button styling in the categories section */
+.categories button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #0ef;
+    color: rgb(26, 0, 58);
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Hover effect for buttons */
+.categories button:hover {
+    background-color: #fff;
+}
+
+/* Styling for items section to display items in 3 columns */
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 3 columns */
+    gap: 10px; /* Space between items */
+    padding: 15px;
+}
+
+/* Styling for each item card */
+.item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0ef; /* Slightly transparent background */
+    padding: 10px;
+    color: rgb(26, 0, 58);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Image styling for each item card */
+.item-card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Limit height of images */
+    border-radius: 5px;
+}
+
+/* Styling for each line item in the bill section */
+.bill-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Checkout button styling */
+#checkoutButton {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #0ef;
+    color: rgb(26, 0, 58);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Hover effect for checkout button */
+#checkoutButton:hover {
+    background-color: #fff;
+}
+
+/* Add New Product Section */
+
+.form-container select {
+    width: 104%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: rgb(26, 0, 58);
+}
+
+
+.form-container {
+    background-color: rgb(26, 0, 58);
+    color: #0ef;
+    padding: 50px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid #0ef;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #000; /* Black border */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-container button {
+    background-color: #00c8ff; /* Match the container color */
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #00a6e0; /* Darker blue on hover */
+}
+
+/* Enhanced Delete Button Styles */
+button.delete-button {
+    background-color: #ff4d4d; /* Bright red color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button.delete-button:hover {
+    background-color: #e60000; /* Darker red for hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+button.delete-button:active {
+    transform: scale(1); /* Remove zoom on click */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+
+
+
+
+
+
+

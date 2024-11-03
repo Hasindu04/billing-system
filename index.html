@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Page & Product Entry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="title" id="title">
+        <h1>HB CAFE BILLING SYSTEM</h1>
+    </div>
+    
+    <div class="container">
+        <!-- Categories Section -->
+        <div class="categories" id="categoryList">
+            <h3>Categories</h3>
+        </div>
+
+        <!-- Items Section -->
+        <div class="items" id="itemList">
+            <h3>Items</h3>
+        </div>
+
+        <!-- Bill Section -->
+        <div class="bill">
+            <h3>Bill</h3>
+            <div id="billItems"></div>
+            <div id="billTotal">Total: $0.00</div>
+            <button id="checkoutButton">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Product Entry Form Section -->
+    <div class="form-container">
+        <h2>Add New Product</h2><br>
+        <form id="productForm" enctype="multipart/form-data">
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="">Select a category</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Beverages">Beverages</option>
+                <option value="Fast Food">Fast Food</option>
+            </select>
+    
+            <label for="name">Product Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required>
+    
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+    
+            <button type="button" id="checkoutButton" onclick="submitForm()">Add Product</button>
+        </form>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
